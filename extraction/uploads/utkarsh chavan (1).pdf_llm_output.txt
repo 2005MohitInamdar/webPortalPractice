@@ -1,0 +1,6 @@
+```json
+{
+  "status": "fail",
+  "message": "Candidate does not meet one or more filtered criteria."
+}
+```

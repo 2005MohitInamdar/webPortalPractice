@@ -1,0 +1,33 @@
+.table {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  vertical-align: middle !important;
+}
+
+thead th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table-responsive {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem;
+  }
+}
+.btn-dark:hover {
+  background-color: #343a40 !important; /* slightly lighter dark */
+  color: #ffc107 !important; /* example: gold text */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}

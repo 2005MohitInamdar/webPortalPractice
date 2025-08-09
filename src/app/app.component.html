@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link fs-5" aria-current="page" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">upload Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fs-5" routerLink="/filter" routerLinkActive="active">Filter Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fs-5" routerLink="/view" routerLinkActive="active">View Selected</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fs-5" routerLink="/email" routerLinkActive="active">Send Email</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fs-5" routerLink="/login" routerLinkActive="active">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

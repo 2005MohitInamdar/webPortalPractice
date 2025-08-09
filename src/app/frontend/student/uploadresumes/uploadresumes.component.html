@@ -1,0 +1,21 @@
+  <div class="outer">
+  <div class="drop-area borderRequired" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+  <p class="mb-4 fs-2">Drag & Drop your PDF resumes or a folder here</p>
+
+  <p *ngIf="!supportsFolderUpload()">Note: Folder upload may not work in this browser. Please select multiple files manually.</p>
+
+  <input
+    type="file"
+    multiple
+    webkitdirectory
+    accept=".pdf"
+    (change)="onFileSelected($event)"
+    hidden
+    #fileInput
+  />
+
+  <button (click)="fileInput.click()" class="btn">
+    {{ supportsFolderUpload() ? 'Or Choose Folder' : 'Choose Multiple Files' }}
+  </button>
+</div>
+<br><br>

@@ -1,0 +1,68 @@
+// //div start 
+// .grandparent{
+//     min-height: 88vh;
+// }
+// .parent{
+//     width: 80%;
+//     max-width: 700px;
+// }
+// //div end
+
+// //email start
+// .form-check-input {
+//   transform: scale(1); /* Adjust this value to increase or decrease size */
+// }
+// //email end
+
+// //button start
+// .btnconfig1{
+//   width: 40%;
+//   margin-right: 5px;
+// }
+// .btnconfig2{
+//   width: 40%;
+//   margin-left: 5px;
+// }
+// //button end
+
+// .grandparent {
+//   background-color: #f8f9fa; /* light grey background */
+//   padding: 20px;
+// }
+
+// .parentHeight {
+//   border-radius: 10px;
+// }
+
+.bg-light-purple {
+  background: linear-gradient(to bottom right, #f8e7f6, #fef6ff);
+}
+
+.text-purple {
+  color: #4B164C;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border: 2px solid #DD88CF;
+  border-radius: 20px;
+}
+
+.btn-custom {
+  background-color: #DD88CF;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #c76abb;
+  color: #fff;
+}
+
+.w-45 {
+  width: 48%;
+}

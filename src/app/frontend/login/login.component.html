@@ -1,0 +1,70 @@
+<!-- 
+<div class="container min-vh-100 d-flex justify-content-center align-items-center grandparent">
+  <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 card shadow p-4 parentHeight">
+    <h2 class="text-center mb-4">Log In</h2>
+
+    <form [formGroup]="myForm" (ngSubmit)="onLogin()">
+      
+      <div class="mb-3">
+        <label for="userEmail" class="form-label">Email</label>
+        <input type="email" id="userEmail" formControlName="emailid" placeholder="Enter your email" class="form-control">
+        <div *ngIf="getError('emailid')" class="text-danger small mb-3">{{ getError('emailid') }}</div>
+
+      </div>
+
+      <div class="mb-3">
+        <label for="pass" class="form-label">Password</label>
+        <input [type]="showPassword ? 'text' : 'password'" id="pass" formControlName="passWord" placeholder="Enter your password" class="form-control">
+        
+        <div class="form-check mt-2">
+          <input type="checkbox" id="showpassword" class="form-check-input" (change)="showPassword = !showPassword">
+          <label for="showpassword" class="form-check-label">Show Password</label>
+        <div *ngIf="getError('passWord')" class="text-danger small mb-3">{{ getError('passWord') }}</div>
+
+        </div>
+      </div>
+
+      <div *ngIf="getError('emailid') || getError('passWord')" class="text-danger small mb-3">
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary w-45">Login</button>
+        <button type="reset" class="btn btn-outline-secondary w-45">Clear</button>
+      </div>
+
+    </form>
+  </div>
+</div> -->
+
+<!-- //-------------------------------------------------------------- -->
+<div class="container min-vh-100 d-flex justify-content-center align-items-center bg-light-purple">
+  <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 p-4 rounded-4 shadow-lg login-card">
+    <h2 class="text-center mb-4 text-purple fw-bold">Log In</h2>
+
+    <form [formGroup]="myForm" (ngSubmit)="onLogin()">
+      
+      <div class="mb-3">
+        <label for="userEmail" class="form-label text-purple">Email</label>
+        <input type="email" id="userEmail" formControlName="emailid" placeholder="Enter your email" class="form-control rounded-pill px-3 py-2">
+        <div *ngIf="getError('emailid')" class="text-danger small mt-1">{{ getError('emailid') }}</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="pass" class="form-label text-purple">Password</label>
+        <input [type]="showPassword ? 'text' : 'password'" id="pass" formControlName="passWord" placeholder="Enter your password" class="form-control rounded-pill px-3 py-2">
+        
+        <div class="form-check mt-2">
+          <input type="checkbox" id="showpassword" class="form-check-input" (change)="showPassword = !showPassword">
+          <label for="showpassword" class="form-check-label text-muted">Show Password</label>
+        </div>
+        <div *ngIf="getError('passWord')" class="text-danger small mt-1">{{ getError('passWord') }}</div>
+      </div>
+
+      <div class="d-flex justify-content-between mt-4">
+        <button type="submit" class="btn btn-custom w-45">Login</button>
+        <button type="reset" class="btn btn-outline-secondary w-45">Clear</button>
+      </div>
+
+    </form>
+  </div>
+</div>

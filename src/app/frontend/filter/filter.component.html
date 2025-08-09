@@ -1,0 +1,74 @@
+<h1 class="text-center my-4">Filter Resumes Based on Requirements</h1>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="filteredForms" class="container">
+  <fieldset class="border p-4 mb-4 rounded shadow-sm">
+    <legend class="w-auto px-2"><strong>Academic Filters</strong></legend>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="minCGPA" class="form-label">Minimum CGPA</label>
+        <input type="number" id="minCGPA" class="form-control" formControlName="minimumCGPA" placeholder="Enter minimum CGPA">
+        <div class="text-danger small mt-1" *ngIf="getError('minimumCGPA')">{{ getError('minimumCGPA') }}</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="gradYear" class="form-label">Graduation Year</label>
+        <input type="number" id="gradYear" class="form-control" formControlName="graduationYear" placeholder="Enter graduation year">
+        <div class="text-danger small mt-1" *ngIf="getError('graduationYear')">{{ getError('graduationYear') }}</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="min12Percentage" class="form-label">12th Percentage</label>
+        <input type="number" id="min12Percentage" class="form-control" formControlName="mintwelthPercentage" placeholder="Enter 12th %">
+        <div class="text-danger small mt-1" *ngIf="getError('mintwelthPercentage')">{{ getError('mintwelthPercentage') }}</div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="min10Percentage" class="form-label">10th Percentage</label>
+        <input type="number" id="min10Percentage" class="form-control" formControlName="mintenthPercentage" placeholder="Enter 10th %">
+        <div class="text-danger small mt-1" *ngIf="getError('mintenthPercentage')">{{ getError('mintenthPercentage') }}</div>
+      </div>
+
+      <div class="col-md-12">
+        <label for="branche" class="form-label">Allowed Branches</label>
+        <select id="branche" class="form-select" formControlName="branches" multiple>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="MECH">MECH</option>
+        </select>
+        <small class="form-text text-muted">Hold Ctrl (Windows) or Cmd (Mac) to select multiple options.</small>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="border p-4 mb-4 rounded shadow-sm">
+    <legend class="w-auto px-2"><strong>Skill Filters</strong></legend>
+    <div class="mb-3">
+      <label for="skill" class="form-label">Skills Required</label>
+      <input type="text" id="skill" class="form-control" formControlName="skills" placeholder="e.g., Python, Java, SQL">
+    </div>
+  </fieldset>
+
+  <fieldset class="border p-4 mb-4 rounded shadow-sm">
+    <legend class="w-auto px-2"><strong>Experience Filters</strong></legend>
+    <div class="mb-3">
+      <label for="internRequirement" class="form-label">Internship Required</label>
+      <select id="internRequirement" class="form-select" formControlName="internshipRequirement">
+        <option [ngValue]="null">No Preference</option>
+        <option [ngValue]="true">Yes</option>
+        <option [ngValue]="false">No</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <div class="d-flex justify-content-end gap-2">
+    <button type="submit" class="btn btn-primary">Apply Filters</button>
+    <button type="reset" class="btn btn-outline-secondary">Clear Filters</button>
+  </div>
+</form>
+<!-- <div *ngIf="llmOutputData">
+  <h3>LLM Output</h3>
+  <p><strong>Name:</strong> {{ llmOutputData.full_name}}</p>
+  <p><strong>email:</strong> {{ llmOutputData.email}}</p>
+</div> -->

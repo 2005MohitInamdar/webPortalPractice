@@ -1,0 +1,2 @@
+Name: {'status': 'pass', 'full_name': 'Mohit Inamdar', 'email': '1970mohitinamdar@gmail.com', 'phone': '+91-8788966885', 'tenth_percentage': 85, 'twelfth_percentage': 70, 'cgpa': 8.0, 'skills': ['Python'], 'degree': 'IT', 'college': 'MGM', 'graduation_year': 2027}
+Email: 

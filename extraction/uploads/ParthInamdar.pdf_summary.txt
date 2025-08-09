@@ -1,0 +1,2 @@
+Name: {'status': 'pass', 'full_name': 'Parth Jignesh Inamdar', 'email': 'parthinamdar1970@gmail.com', 'phone': '+91 8793928040', 'tenth_percentage': None, 'twelfth_percentage': None, 'cgpa': 8.3, 'skills': ['SAP BW4HANA', 'Azure Data Factory', 'Databricks', 'Power BI', 'SQL', 'Python', 'PHP', 'Java', 'React', 'Angular', 'Vue.JS', 'CSS Frameworks', '.NET', 'LangChain'], 'degree': 'Bachelor of Engineering • Information Technology', 'college': 'Jawaharlal Nehru Engineering College, MGM University', 'graduation_year': 2024}
+Email: 

@@ -1,0 +1,2 @@
+llmOutput = []
+receivedEmails = []

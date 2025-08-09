@@ -1,0 +1,2 @@
+Name: {'status': 'pass', 'full_name': 'KRISH SODI', 'email': '2005mohitinamdar@gmail.com', 'phone': '3456432567', 'tenth_percentage': 86, 'twelfth_percentage': 78, 'cgpa': 8.9, 'skills': ['Python', 'html', 'css', 'js'], 'degree': 'B-Tech', 'college': 'MGM', 'graduation_year': 2027}
+Email: 

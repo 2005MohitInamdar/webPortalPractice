@@ -1,0 +1,14 @@
+```json
+{
+  "full_name": "Victor Meza",
+  "email_address": "vsmeza@ucdavis.edu",
+  "phone_number": "(303) 555-6677",
+  "percentage_scored_in_10th": null,
+  "percentage_scored_in_12th": null,
+  "aggregate_cgpa": null,
+  "key_technical_skills": ["Microsoft Office (Word, Excel, PowerPoint)"],
+  "degree": "Bachelor of Science in International Agriculture Development",
+  "college_name": "University of California, Davis",
+  "graduation_year": 2026
+}
+```

@@ -1,0 +1,2 @@
+Name: {'status': 'pass', 'full_name': 'Miguel Díaz', 'email': 'mmddiaz@ucdavis.edu', 'phone': '(012) 345-6789', 'tenth_percentage': None, 'twelfth_percentage': None, 'cgpa': 3.5, 'skills': ['Python', 'C++', 'HTML', 'CSS'], 'degree': 'Bachelor of Science in Cognitive Science, Bachelor of Arts in Design', 'college': 'University of California, Davis', 'graduation_year': 2025}
+Email: 

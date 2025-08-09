@@ -1,0 +1,2 @@
+Name: {'status': 'pass', 'full_name': 'U T K A R S H C H A V A N', 'email': 'chavanutkarsh707@gmail.com', 'phone': '9834548133', 'tenth_percentage': None, 'twelfth_percentage': None, 'cgpa': None, 'skills': ['C', 'C++', 'Python', 'HTML', 'CSS', 'Javascript'], 'degree': 'B.Tech in IT', 'college': 'MGM University', 'graduation_year': None}
+Email: 
